@@ -209,7 +209,7 @@
             document.getElementsByName("AIDC")[0].value = aidc.toFixed(2);
 
             // Calculate SWS
-            let sws = (swsPercentage / 100) * bcd;
+            let sws = (swsPercentage / 100) * (bcd + aidc);
             document.getElementsByName("SWS")[0].value = sws.toFixed(2);
 
             // Calculate AntiDumpingDuty
